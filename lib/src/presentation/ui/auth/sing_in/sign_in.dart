@@ -1,4 +1,3 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodly/src/presentation/theme/color_scheme/app_colors.dart';
@@ -43,9 +42,7 @@ class SignIn extends StatelessWidget {
                       style: AppTextStyle.body.copyWith(
                         color: AppColors.primaryColor,
                       ),
-                      recognizer: TapRecognizer(() {
-                        AutoRouter.of(context).pushNamed('/createAccount');
-                      }),
+                      recognizer: TapRecognizer(() {}),
                     ),
                   ],
                 ),
@@ -59,10 +56,7 @@ class SignIn extends StatelessWidget {
                 hintText: 'Password',
               ),
               20.height,
-              GestureDetector(
-                  onTap: () =>
-                      AutoRouter.of(context).pushNamed('/forgetPassword'),
-                  child: Align(child: AppText.captionDark('Forgot password?'))),
+              GestureDetector(onTap: () {}),
               20.height,
               AppButton(tittle: 'SIGN IN', onPressed: () {}),
               24.height,

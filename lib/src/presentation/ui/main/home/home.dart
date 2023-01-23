@@ -54,6 +54,18 @@ class Home extends HookWidget {
             34.height,
             AllRestaurants(
               onChange: (int value) {
+                showModalBottomSheet(
+                  context: context,
+                  builder: (context) => Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        height: 100,
+                      )
+                    ],
+                  ),
+                );
+
                 /// On tap card.
               },
             )

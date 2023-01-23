@@ -1,4 +1,3 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -81,12 +80,10 @@ class _IntroScreenState extends State<IntroScreen> {
             ),
             child: AppButton(
               tittle: 'GET STARTED',
-              onPressed: () {
-                AutoRouter.of(context).pushNamed('/signIn');
-              },
+              onPressed: () {},
             ),
           ),
-          80.height,
+          40.height,
         ],
       ),
     );

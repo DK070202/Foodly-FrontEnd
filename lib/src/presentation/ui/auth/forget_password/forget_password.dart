@@ -1,4 +1,3 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodly/src/presentation/theme/color_scheme/app_colors.dart';
@@ -38,11 +37,7 @@ class ForgetPassword extends StatelessWidget {
                 hintText: 'Email Address',
               ),
               26.height,
-              AppButton(
-                  tittle: 'RESET PASSWORD',
-                  onPressed: () {
-                    AutoRouter.of(context).pushNamed('/emailSent');
-                  }),
+              AppButton(tittle: 'RESET PASSWORD', onPressed: () {}),
             ],
           ),
         ),
